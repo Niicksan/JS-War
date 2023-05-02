@@ -9,7 +9,6 @@ import { Players } from "./models/Players.js";
 const players = new Players();
 const gameDeck = new GameDeck();
 const colors = ['red', 'black'];
-const actions = ['unshift', 'push'];
 
 function createPlayers(playersNumber) {
     if (playersNumber > 1) {
@@ -66,7 +65,11 @@ function dealingCards() {
 
     console.log(players.allPlayers);
     console.log(players.allPlayers[0].playerDeck);
+    console.log(players.allPlayers[0].playerDeck.numberOfCards);
     console.log(players.allPlayers[1].playerDeck);
+    console.log(players.allPlayers[1].playerDeck.numberOfCards);
+    // console.log(players.allPlayers[2].playerDeck);
+    // console.log(players.allPlayers[2].playerDeck.numberOfCards);
 }
 
 function startGame() {

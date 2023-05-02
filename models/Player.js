@@ -5,6 +5,4 @@ export class Player {
         this.name = name;
         this.playerDeck = new PlayerDeck();
     }
-
-
 }
